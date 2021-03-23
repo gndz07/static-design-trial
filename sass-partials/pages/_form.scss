@@ -54,6 +54,30 @@
 				color: gray;
 				margin-top: 0;
 			}
+
+			&[data-error] {
+				margin-bottom: 1.8em;
+				border-color: red;
+			}
+
+			&[data-error] legend {
+				color: red;
+			}
+
+			&[data-error]::after {
+  				content: attr(data-error);
+  				position: absolute;
+  				margin-top: 2em;
+				font-size: 0.6em;
+				color: #e54858;
+				display: block;
+				opacity: 0;
+				transition: 0.3s;
+			}
+
+			&[data-error-visible="true"]::after {
+  				opacity: 1;
+			}
 		}
 
 		&__submit {
