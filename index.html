@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6b2f05754f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<noscript>Your browser does not support JavaScript</noscript>
+
+	<header class="header">
+		<div class="header--container">
+			<h1 class="header__text">Dummy Heading</h1>
+			<p class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</header>
+
+	<main>
+		<div class="indicator">
+			<p class="indicator__text">Step 1 of 3</p>
+			<div class="indicator__icon">
+				<i class="fas fa-circle"></i>
+				<i class="fas fa-circle"></i>
+				<i class="fas fa-circle"></i>
+			</div>
+		</div>
+		<form name="create-form" method="post" class="create-form">
+			<section class="create-form__title">
+				<h2 class="create-form__title__head">Let's set up your account</h2>
+				<p class="create-form__title__desc">Already have an account? 
+					<span class="blue-text">Sign in</span>
+				</p>
+			</section>
+
+			<section class="create-form__data">
+				<input id="name-input" class="create-form__data__input" type="text" name="name" placeholder="Your name" aria-label="Your name">
+				<input id="email-input" class="create-form__data__input" type="text" name="email" placeholder="Email address" aria-label="Email address">
+				<select id="user-type-input" class="create-form__data__input" name="user-type" aria-label="user type">
+					<option class="select-options" value="" disabled selected>I would describe my user type as</option>
+					<option class="select-options" value="1">User 1</option>
+					<option class="select-options" value="1">User 2</option>
+					<option class="select-options" value="1">User 3</option>
+				</select>
+				<div class="create-form__data__input password-input">
+					<input class="create-form__data__input password-input--inner" type="password" name="password" aria-label="password" placeholder="Password">
+					<span class="fas fa-eye"></span>
+				</div>
+					<p class="create-form__data__input__desc">Minimum 8 characters</p>
+			</section>
+
+			<section class="create-form__submit">
+				<button id="submit-btn" type="submit" class="btn" aria-label="next step">Next</button>
+				<p class="create-form__data__submit__desc">By clicking the "Next" button, you agree to creating a free account, and to accept 
+					<span class="blue-text">Terms of Service</span> and 
+					<span class="blue-text">Privacy Policy.</span>
+				</p>
+			</section>
+		</form>
+
+	</main>
+</body>
+
+
+
+
+</html>

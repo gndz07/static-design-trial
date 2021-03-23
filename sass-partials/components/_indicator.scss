@@ -1,0 +1,25 @@
+.indicator {
+	position: absolute;
+	top: 1em;
+	right: 2em;
+	display: flex;
+
+	&__text {
+		font-size: 0.8em;
+		font-weight: bold;
+		margin-right: 1em;
+	}
+
+	&__icon {
+		font-size: 4px;
+		align-self: center;
+
+		.fas {
+			margin-right: 1em;
+
+			&:nth-child(n+2) {
+				color: gray;
+			}
+		}
+	}
+}

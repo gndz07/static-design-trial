@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  flex-direction: row-reverse;
+}
+
+main {
+  position: relative;
+  width: 64vw;
+  background-color: #f9f9f9;
+}
+
+.indicator {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  display: flex;
+}
+.indicator__text {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 1em;
+}
+.indicator__icon {
+  font-size: 4px;
+  align-self: center;
+}
+.indicator__icon .fas {
+  margin-right: 1em;
+}
+.indicator__icon .fas:nth-child(n+2) {
+  color: gray;
+}
+
+.blue-text {
+  color: #0070f8;
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  color: gray;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.header {
+  height: 100vh;
+  width: 36vw;
+  background-color: #0070f8;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.header--container {
+  position: absolute;
+  bottom: 10vw;
+}
+.header__text {
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.header__description {
+  width: 60%;
+  margin: auto;
+  text-align: initial;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.6em;
+}
+
+.create-form {
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 40%;
+  transform: translate(-50%, -40%);
+}
+.create-form__title {
+  margin-bottom: 2em;
+}
+.create-form__title__head {
+  margin-bottom: 1em;
+}
+.create-form__title__desc {
+  font-size: 0.9em;
+}
+.create-form__data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.create-form__data__input {
+  margin-bottom: 1.3em;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid;
+  border-color: #e0e0e0;
+  border-radius: 5px;
+}
+.create-form__data__input:nth-child(3) {
+  color: gray;
+}
+.create-form__data__input__desc {
+  font-size: 0.7em;
+  color: gray;
+  margin-top: 0;
+}
+.create-form__data__submit__desc {
+  font-size: 0.7em;
+  margin-top: 2em;
+}
+
+.password-input {
+  padding: 0;
+  display: flex;
+}
+.password-input--inner {
+  margin: 0;
+  border: none;
+  width: 94%;
+}
+.password-input .fa-eye {
+  align-self: center;
+  margin-right: 0.5em;
+  color: gray;
+}
+
+.select-options:nth-child(n+2) {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

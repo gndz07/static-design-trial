@@ -1,0 +1,74 @@
+.create-form {
+	width: 50%;
+	margin-left: 50%;
+	margin-top: 40%;
+	transform: translate(-50%, -40%);
+
+	&__title {
+		margin-bottom: 2em;
+
+		&__head {
+			margin-bottom: 1em;
+		}
+
+		&__desc {
+			font-size: 0.9em;
+		}
+	}
+
+	&__data {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1em;
+
+		&__input {
+			margin-bottom: 1.3em;
+			padding: 1em;
+			background-color: $bg-color;
+			border: 1px solid;
+			border-color: darken($bg-color, 10%);
+			border-radius: 5px;
+
+			&:nth-child(3) {
+				color: gray;
+			}
+
+			&__desc {
+				font-size: 0.7em;
+				color: gray;
+				margin-top: 0;
+			}
+		}
+
+		&__submit {
+
+			&__desc {
+				font-size: 0.7em;
+				margin-top: 2em;
+			}
+		}
+	}
+}
+
+.password-input {
+	padding: 0;
+	display: flex;
+
+	&--inner {
+		margin: 0;
+		border: none;
+		width: 94%;
+	}
+
+	.fa-eye {
+		align-self: center;
+		margin-right: 0.5em;
+		color: gray;
+	}
+}
+
+.select-options {
+	&:nth-child(n+2) {
+		color: black;
+	}
+}
