@@ -23,14 +23,30 @@
 
 		&__input {
 			margin-bottom: 1.3em;
-			padding: 1em;
+			padding: 0.8em;
 			background-color: $bg-color;
 			border: 1px solid;
 			border-color: darken($bg-color, 10%);
 			border-radius: 5px;
 
+			&__legend {
+				font-size: 0.7em;
+				color: gray;
+				display: none;
+			}
+
+			&--inner {
+				border: none;
+				background-color: $bg-color;
+
+				&:focus {
+					outline: none;
+				}
+			}
+
 			&:nth-child(3) {
 				color: gray;
+				padding: 1em;
 			}
 
 			&__desc {

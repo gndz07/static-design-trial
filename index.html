@@ -38,18 +38,32 @@
 			</section>
 
 			<section class="create-form__data">
-				<input id="name-input" class="create-form__data__input" type="text" name="name" placeholder="Your name" aria-label="Your name">
-				<input id="email-input" class="create-form__data__input" type="text" name="email" placeholder="Email address" aria-label="Email address">
-				<select id="user-type-input" class="create-form__data__input" name="user-type" aria-label="user type">
+				<fieldset class="create-form__data__input">
+					<legend class="create-form__data__input__legend">Your name</legend>
+					<input id="name-input" class="create-form__data__input--inner form-data" type="text" name="name" placeholder="Your name" aria-label="Your name">
+				</fieldset>
+
+				<fieldset class="create-form__data__input">
+					<legend class="create-form__data__input__legend">Email address</legend>
+					<input id="email-input" class="create-form__data__input--inner form-data" type="text" name="email" placeholder="Email address" aria-label="Email address">
+				</fieldset>
+
+				<select id="user-type-input" class="create-form__data__input form-data" name="user-type" aria-label="user type">
 					<option class="select-options" value="" disabled selected>I would describe my user type as</option>
 					<option class="select-options" value="1">User 1</option>
 					<option class="select-options" value="1">User 2</option>
 					<option class="select-options" value="1">User 3</option>
 				</select>
-				<div class="create-form__data__input password-input">
-					<input class="create-form__data__input password-input--inner" type="password" name="password" aria-label="password" placeholder="Password">
-					<span class="fas fa-eye"></span>
-				</div>
+
+				<fieldset class="create-form__data__input">
+					<div class="create-form__data__input--inner password-input">
+						<legend class="create-form__data__input__legend">Password</legend>
+						<input class="create-form__data__input--inner password-input--inner form-data" type="password" name="password" aria-label="password" placeholder="Password">
+						<span class="fas fa-eye"></span>
+					</div>
+				</fieldset>
+
+				
 					<p class="create-form__data__input__desc">Minimum 8 characters</p>
 			</section>
 
@@ -63,6 +77,7 @@
 		</form>
 
 	</main>
+	<script src="index.js"></script>
 </body>
 
 
