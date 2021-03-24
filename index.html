@@ -29,7 +29,7 @@
 				<i class="fas fa-circle"></i>
 			</div>
 		</div>
-		<form name="create-form" method="post" class="create-form">
+		<form id="create-form" name="create-form" method="post" class="create-form">
 			<section class="create-form__title">
 				<h2 class="create-form__title__head">Let's set up your account</h2>
 				<p class="create-form__title__desc">Already have an account? 
@@ -50,7 +50,7 @@
 
 				<select id="user-type-input" class="create-form__data__input form-data" name="user-type" aria-label="user type">
 					<option class="select-options" value="" disabled selected>I would describe my user type as</option>
-					<option class="select-options" value="1">User 1</option>
+					<option class="select-options" value="developer">Developer</option>
 					<option class="select-options" value="1">User 2</option>
 					<option class="select-options" value="1">User 3</option>
 				</select>
@@ -66,7 +66,7 @@
 			</section>
 
 			<section class="create-form__submit">
-				<button id="submit-btn" type="submit" class="btn" aria-label="next step">Next</button>
+				<button disabled id="submit-btn" type="submit" class="btn" aria-label="next step" aria-disabled="true">Next</button>
 				<p class="create-form__data__submit__desc">By clicking the "Next" button, you agree to creating a free account, and to accept 
 					<span class="blue-text">Terms of Service</span> and 
 					<span class="blue-text">Privacy Policy.</span>
