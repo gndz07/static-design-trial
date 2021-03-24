@@ -1,1 +1,1 @@
-Trial
+Static design of create account page
