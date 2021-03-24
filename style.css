@@ -148,6 +148,15 @@ main {
   margin-top: 2em;
 }
 
+.password-container {
+  display: flex;
+}
+.password-container .fa-eye {
+  align-self: center;
+  margin-right: 0.5em;
+  color: gray;
+}
+
 .password-input {
   padding: 0;
   display: flex;
@@ -156,11 +165,6 @@ main {
   margin: 0;
   border: none;
   width: 94%;
-}
-.password-input .fa-eye {
-  align-self: center;
-  margin-right: 0.5em;
-  color: gray;
 }
 
 .select-options:nth-child(n+2) {

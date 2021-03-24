@@ -90,6 +90,15 @@
 	}
 }
 
+.password-container {
+	display: flex;
+
+	.fa-eye {
+		align-self: center;
+		margin-right: 0.5em;
+		color: gray;
+	}
+}
 .password-input {
 	padding: 0;
 	display: flex;
@@ -100,11 +109,7 @@
 		width: 94%;
 	}
 
-	.fa-eye {
-		align-self: center;
-		margin-right: 0.5em;
-		color: gray;
-	}
+	
 }
 
 .select-options {
