@@ -67,7 +67,7 @@
 			&[data-error]::after {
   				content: attr(data-error);
   				position: absolute;
-  				margin-top: 2em;
+  				margin-top: 1.6em;
 				font-size: 0.6em;
 				color: #e54858;
 				display: block;
@@ -97,6 +97,10 @@
 		align-self: center;
 		margin-right: 0.5em;
 		color: gray;
+	}
+
+	&.create-form__data__input[data-error]::after {
+		margin-top: 3.5em;
 	}
 }
 .password-input {
